@@ -9,4 +9,4 @@ const mergedTypeDefs=mergeTypeDefs([transactionTypeDefs,userTypeDef]);
 
 
 
-export default mergeTypeDefs;
+export default mergedTypeDefs;

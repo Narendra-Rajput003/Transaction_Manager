@@ -20,7 +20,7 @@ type Query{
 type Mutation{
     createTransaction(input:CreateTransaction!):Transaction
     updateTransaction(input:UpdateTransaction!):Transaction
-    deleteTransaction(id:ID!):DeleteTransactionResponse
+    # deleteTransaction(id:ID!):DeleteTransactionResponse
 }
 
 input CreateTransaction{
@@ -44,10 +44,7 @@ input UpdateTransaction{
 
 
 }
-# type DeleteTransactionResponse{
-#     message:String!
-#     success:Boolean!
-# }
+
 
 
 `

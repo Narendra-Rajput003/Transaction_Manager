@@ -1,7 +1,7 @@
 const userTypeDef = `#graphql 
 
 enum Gender{
-    MALE
+  MALE
   FEMALE
   OTHER
 
@@ -10,7 +10,7 @@ enum Gender{
 type User{
     _id:ID!
     username:String!
-    name:String!
+    email:String!
     password:String!
     profilePicture:String
     gender:Gender!
@@ -25,26 +25,30 @@ type Query{
 }
 
 type Mutation{
-    signUp(input:SignUpInput!):User
-    login(input:LoginInput!):User
-    logout:LogoutResponse
+    # signUp(input:SignUpInput!):User
+    # login(input:LoginInput!):User
+    # logout:LogoutResponse
+
+    signUp(username:String!,email:String!,password:String!,gender:String!):User
+    login(email:String!,password:String!):User
+    logout:String
 }
 
-input SignUpInput{
-    username:String!
-    name:String!
-    password:String!
-    gender:Gender!
-}
+# input SignUpInput{
+#     username:String!
+#     email:String!
+#     password:String!
+#     gender:Gender!
+# }
 
-input LoginInput{
-    username:String!
-    password:String!
-}
+# input LoginInput{
+#     email:String!
+#     password:String!
+# }
 
-type LogoutResponse{
-    message:String!
-}
+# type LogoutResponse{
+#     message:String!
+# }
 
 `;
 

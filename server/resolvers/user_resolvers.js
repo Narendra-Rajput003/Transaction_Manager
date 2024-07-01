@@ -1,12 +1,13 @@
-import { Query } from "mongoose";
-import { users } from "../dummyData/data.js";
+
 
 const userResolver={
     Query: {
-        users: () => users,
+       
     },
     
-    Mutation:{},
+    Mutation:{
+    
+    },
 };
 
 export default userResolver;

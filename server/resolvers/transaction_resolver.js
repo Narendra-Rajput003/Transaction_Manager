@@ -1,5 +1,8 @@
 const transactionResolver={
-    Query:{},
+    Query:{
+        
+    },
+    
 }
 
 export default transactionResolver
